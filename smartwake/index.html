@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartWake</title>
+<meta name="description" content="SmartWake — an iPhone alarm that wakes you in a light sleep phase using the heart rate from your WHOOP band, and makes sure you actually get up.">
+<style>
+:root {
+  --bg: #fff6ec; --bg2: #fce6d3; --card: #ffffff; --text: #1d1b2a; --text2: #6e6a7c;
+  --accent: #ee6a1f; --line: rgba(29, 27, 42, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #070b1a; --bg2: #141a36; --card: #1a2142; --text: #f6f2ea; --text2: #9ba3c6;
+    --accent: #ff9a4d; --line: rgba(255, 255, 255, .08); }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--text); background: linear-gradient(var(--bg), var(--bg2)) fixed;
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header img { width: 56px; height: 56px; border-radius: 13px; }
+header .name { font-size: 28px; font-weight: 700; }
+header .tag { color: var(--text2); font-size: 15px; }
+h1 { font-size: 30px; margin: 0 0 6px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); }
+.muted { color: var(--text2); font-size: 15px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px 24px; margin: 18px 0; }
+a { color: var(--accent); }
+nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 15px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+code { font-size: 15px; }
+</style>
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="" width="56" height="56">
+    <div><div class="name">SmartWake</div><div class="tag">Smart alarm for iPhone and WHOOP</div></div>
+  </header>
+
+  <h1>Wake up gently. Get up for sure.</h1>
+  <p>SmartWake is an iPhone alarm app. During the night it reads your heart rate from a WHOOP band over
+  Bluetooth, picks a light moment before your alarm time to wake you, and at the alarm time rings until you
+  solve a short task (math, typing a phrase, memory, word translation and more). After that it keeps watching
+  your heart rate for a while to make sure you did not fall asleep again.</p>
+
+  <div class="card">
+    <h3>Your data stays yours</h3>
+    <p>SmartWake has no servers and no accounts of its own. Sleep data is stored on your iPhone. If you choose to
+    connect Google Drive, the app saves your nights to a <b>SmartWake</b> folder on <b>your own</b> Google Drive and
+    can only see the files it created there. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Heart rate and RR intervals from WHOOP 5.0 directly over Bluetooth, all night.</li>
+    <li>Gentle wake-up window before the alarm time; guaranteed ring at the alarm time via iOS AlarmKit.</li>
+    <li>Wake-up tasks: math, typing, memory, shaking, translation, heart rate, barcode.</li>
+    <li>Optional sleep sound tracking: keeps only short fragments of snoring, sleep talking and similar sounds.</li>
+    <li>Optional backup of nights and settings to your own Google Drive, with automatic clean-up after N days.</li>
+  </ul>
+
+  <hr>
+
+  <h2 lang="ru">По-русски</h2>
+  <p lang="ru">SmartWake — будильник для iPhone. Ночью он получает пульс с браслета WHOOP по Bluetooth, будит в лёгкой
+  фазе до заданного времени, а в это время звонит, пока не решишь задание, и потом следит, не уснул ли ты снова.
+  Своих серверов у приложения нет. Ночи хранятся на телефоне и, если подключишь, на <b>твоём</b> Google Диске в папке
+  SmartWake. Приложение видит там только свои файлы. Подробнее — в <a href="privacy.html#ru">политике
+  конфиденциальности</a>.</p>
+
+  <nav>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="https://github.com/swyatoslavik/swyatoslavik.github.io/issues">Contact</a>
+  </nav>
+</main>
+</body>
+</html>
